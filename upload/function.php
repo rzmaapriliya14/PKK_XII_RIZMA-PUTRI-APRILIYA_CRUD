@@ -58,7 +58,7 @@ function upload()
     $ekstensiGambarValid = ['JPG', 'jpeg', 'png', 'jpg', 'PNG', 'JPEG'];
     $ekstensiGambar = explode('.', $namaFile);
     //fungsi explode itu string array, kalau nama
-    //filenya widya.jpg itu menjadi ['widya','jpg']
+    //filenya rizma.jpg itu menjadi ['rizma','jpg']
     $ekstensiGambar = strtolower(end($ekstensiGambar));
     if (!in_array($ekstensiGambar, $ekstensiGambarValid)){
         echo    "<script>
